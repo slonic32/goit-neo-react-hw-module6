@@ -18,7 +18,9 @@ export default function Contact({ contact }) {
           {contact.number}
         </p>
       </div>
-      <button onClick={() => dispatch(deleteContact(contact))}>Delete</button>
+      <button onClick={() => dispatch(deleteContact(contact.id))}>
+        Delete
+      </button>
     </li>
   );
 }
